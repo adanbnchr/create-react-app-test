@@ -1,8 +1,25 @@
 import React, { Component } from "react"
+import { Link } from 'react-router-dom'
 
 class Menu extends Component {
   render() {
-    return <h2>Este es el menu</h2>
+    return (
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/roster">Roster</Link>
+            </li>
+            <li>
+              <Link to="/schedule">Schedule</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    )
   }
 }
 
